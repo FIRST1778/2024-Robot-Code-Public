@@ -1,0 +1,49 @@
+SPARK MAX =============================================================
+docs.revrobotics.com/sparkmax/status-led
+
+cyan = brake	with	solid = valid signal
+magenta = coast		blink = no signal
+
+green/white = forward limit
+red/white = reverse limit
+
+fast magenta/white = device identify
+yellow/white = firmware updating
+blue/white = bootloader firmware retry
+
+blue/orange = 12V missing (powered by USB)
+magenta/orange = sensor fault
+yellow/orange = CAN fault
+
+CANCoder ==============================================================
+store.ctr-electronics.com/content/user-manual/CANCoder%20User's%20Guide.pdf
+
+solid orange = began operation
+solid red = seeding absolute
+
+red blink = magnet out of range	with	bright = CAN bus present
+yellow blink = reduced accuracy		dim = never seen CAN bus
+green blink = magnet in range
+
+yellow/green = in bootloader
+slow red blink = CAN bus lost
+
+Talon FX ==============================================================
+docs.wcproducts.com/kraken-x60/kraken-x60-+-talonfx/status-lights
+
+slow red blink = CAN not detected
+red blink = limit switch triggered
+green/orange = in bootloader
+
+REV PDH ===============================================================
+docs.revrobotics.com/ion-control-system/pdh/status-led
+
+green = connected to roboRIO
+blue = not connected
+orange/yellow = CAN fault
+
+magenta blink = keep alive timeout
+solid cyan = secondary heartbeat
+blue/orange = low battery
+cyan/orange = hardware fault
+magenta/orange = device over current

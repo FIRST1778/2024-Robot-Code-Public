@@ -1,0 +1,24 @@
+{
+    "folders": [
+        {
+            "path": ".",
+            "folder_exclude_patterns": ["build"],
+        }
+    ],
+    "settings": {
+        "translate_tabs_to_spaces": true,
+        "tab_size": 4,
+    },
+    "build_systems": [
+        {
+            "name": "Build",
+            "shell_cmd": "gradle build",
+            "working_dir": "$project_path",
+        },
+        {
+            "name": "Deploy",
+            "shell_cmd": "gradle --offline deploy",
+            "working_dir": "$project_path",
+        }
+    ]
+}
